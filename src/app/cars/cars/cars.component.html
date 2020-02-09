@@ -1,0 +1,19 @@
+<div class="cars-body">
+  <mat-grid-list class="cars-grid-list" cols="2" rowHeight="1:1" gutterSize="25">
+    <mat-grid-tile class="cars-grid-tile" *ngFor="let car of cars">
+      <div class="cars-grid-tile__container">
+
+        <div class="cars-grid-tile__content">
+          {{car}}
+        </div>
+
+        <div class="cars-grid-tile__image">
+          <img [alt]="'image of a car of type ' + car" [src]="'assets/cars/' + car + '.jpg'"/>
+        </div>
+        <button mat-flat-button class="cars-grid-tile__select-button" color="primary">
+          Select car
+        </button>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

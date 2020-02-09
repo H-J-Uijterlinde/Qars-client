@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.body {
+  background: #303030;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  position: relative;
+  min-height: 100%;
+  top: 52px;
+  padding-bottom: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+  0 6px 10px 0 rgba(0, 0, 0, 0.14),
+  0 1px 18px 0 rgba(0, 0, 0, 0.12);
+}
+
+.header__title {
+  padding: 0 8px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  background: #c2185b;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  padding: 12px;
+  margin-top: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  }
