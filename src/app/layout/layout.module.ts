@@ -2,8 +2,9 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
-import {MatToolbarModule} from '@angular/material';
+import {MatButtonModule, MatMenuModule, MatToolbarModule} from '@angular/material';
 import {RouterModule} from '@angular/router';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -11,11 +12,14 @@ import {RouterModule} from '@angular/router';
     HeaderComponent,
     FooterComponent
   ],
-    imports: [
-        CommonModule,
-        MatToolbarModule,
-        RouterModule
-    ],
+  imports: [
+    CommonModule,
+    MatToolbarModule,
+    RouterModule,
+    FontAwesomeModule,
+    MatButtonModule,
+    MatMenuModule
+  ],
   exports: [
     HeaderComponent,
     FooterComponent

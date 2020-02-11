@@ -44,6 +44,10 @@ body {
   text-decoration: none;
 }
 
+.spacer {
+  flex: 1 1 auto;
+}
+
 .footer {
   background: #c2185b;
   color: white;

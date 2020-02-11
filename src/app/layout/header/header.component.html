@@ -2,4 +2,17 @@
   <a class="header__title" routerLink="/">
     Qars
   </a>
+  <span class="spacer"></span>
+  <button class="header__user-menu-button" mat-button [matMenuTriggerFor]="userMenu">
+    <fa-icon [icon]="faUserIcon"></fa-icon>
+  </button>
 </mat-toolbar>
+
+<mat-menu #userMenu="matMenu">
+  <a class="menu-item" mat-menu-item>
+    Login
+  </a>
+  <a class="menu-item" mat-menu-item>
+    Register
+  </a>
+</mat-menu>
